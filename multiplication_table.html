@@ -6,16 +6,15 @@ Exercise 1: Multiplication Table
 <html lang="en">
    <head>
      <title>Multiplication Table</title>
-   </head>
   <?php
   error_reporting(E_ALL);
   ini_set("display_errors", 1);
   //table function
-  function table($row, $col) {
+  function table() {
     echo "<table style="width:100%">";
-    for(i=0; i<=row; i++) {
+    for(i=0; i<=10; i++) {
       echo "<tr>";
-      for(j=0; j<=col; j++) {
+      for(j=0; j<=10; j++) {
         echo "<td>" . i*j . "</td>";
       }
       echo "</tr>";
@@ -23,5 +22,6 @@ Exercise 1: Multiplication Table
     echo "</table>";
   }
   ?>
-  
+  </head>
+   
 </html>
