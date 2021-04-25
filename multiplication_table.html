@@ -1,1 +1,27 @@
+<!--
+Exercise 1: Multiplication Table
+-->
 
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+     <title>Multiplication Table</title>
+   </head>
+  <?php
+  error_reporting(E_ALL);
+  ini_set("display_errors", 1);
+  //table function
+  function table($row, $col) {
+    echo "<table style="width:100%">";
+    for(i=0; i<=row; i++) {
+      echo "<tr>";
+      for(j=0; j<=col; j++) {
+        echo "<td>" . i*j . "</td>";
+      }
+      echo "</tr>";
+    }
+    echo "</table>";
+  }
+  ?>
+  
+</html>
